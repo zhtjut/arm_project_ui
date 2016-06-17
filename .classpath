@@ -2,12 +2,12 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="json-lib/commons-beanutils-1.8.0.jar"/>
-	<classpathentry kind="lib" path="json-lib/commons-collections-3.1.jar"/>
-	<classpathentry kind="lib" path="json-lib/commons-lang-2.5.jar"/>
-	<classpathentry kind="lib" path="json-lib/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="json-lib/ezmorph-1.0.6.jar"/>
-	<classpathentry kind="lib" path="json-lib/json-lib-2.4-jdk15.jar"/>
-	<classpathentry kind="lib" path="RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/myui/RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/myui/json-lib/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/myui/json-lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/myui/json-lib/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/myui/json-lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/myui/json-lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/myui/json-lib/json-lib-2.4-jdk15.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

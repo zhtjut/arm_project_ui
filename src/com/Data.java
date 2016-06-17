@@ -26,10 +26,15 @@ public class Data {
     private static String out_windspeed="20";
     private static String in_temprature="25";
     private static String in_humidity="25";
-    private static String in_ratiation="10000";
-    private static String in_co2="420";
-
-    static String skylight_south_open = "FE050000FF009835";
+    private static String in_radiation="10000";
+    private static String in_co2="420";  
+    
+   
+	private static String winddirection="无";
+    private static String atmosphere="1000";
+    private static String rain="false";
+    private static String updatetime="0-0-0-0";
+    /*static String skylight_south_open = "FE050000FF009835";
     static String skylight_south_close= "FE0500000000D9C5";
     static String skylight_north_open = "FE050001FF00C9F5";
     static String skylight_north_close= "FE05000100008805";    
@@ -45,12 +50,42 @@ public class Data {
     static String co2_close="FE050006000039C4";    
     static String led2_open="FE050007FF0029F4";
     static String led2_close="FE05000700006804";
+    */
     
     
+    public static String getWinddirection() {
+		return winddirection;
+	}
+
+	public static void setWinddirection(String winddirection) {
+		Data.winddirection = winddirection;
+	}
+
+	public static String getAtmosphere() {
+		return atmosphere;
+	}
+
+	public static void setAtmosphere(String atmosphere) {
+		Data.atmosphere = atmosphere;
+	}
+
+	public static String getRain() {
+		return rain;
+	}
+
+	public static void setRain(String rain) {
+		Data.rain = rain;
+	}
     
-    
-    
-    public static String getOut_radiation() {
+    public static String getUpdatetime() {
+		return updatetime;
+	}
+
+	public static void setUpdatetime(String aupdatetime) {
+		updatetime = aupdatetime;
+	}
+
+	public static String getOut_radiation() {
         return out_radiation;
     }
 
@@ -106,12 +141,12 @@ public class Data {
         in_humidity = aIn_humidity;
     }
 
-    public static String getIn_ratiation() {
-        return in_ratiation;
+    public static String getIn_radiation() {
+        return in_radiation;
     }
 
-    public static void setIn_ratiation(String aIn_ratiation) {
-        in_ratiation = aIn_ratiation;
+    public static void setIn_radiation(String aIn_radiation) {
+        in_radiation = aIn_radiation;
     }
 
     public static String getIn_co2() {
@@ -147,6 +182,112 @@ public class Data {
 		
 	} 
     
+    public static void getindoor()
+   	{	
+   		String httpurl="http://120.27.110.211:8020/indoor";
+   		StringBuffer sb=new StringBuffer();
+   		try
+   		{
+   			URL url=new URL(httpurl);
+   			URLConnection conn=url.openConnection();
+   			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+   			String line=null;
+   			while((line=reader.readLine())!=null){
+   				sb.append(line+"");
+   				sb.append("\r\n");
+   			}
+   			reader.close();
+   		}
+   		catch(Exception e)
+   		{
+   			System.out.println(e.toString());
+   		}
+   		
+    	
+   			//return sb==null?"error":sb.toString();
+   		JSONObject indoordata=JSONObject.fromObject(sb.toString());
+   		Object indoortemp=indoordata.get("indoor");
+   		
+   		JSONObject indoortemp2=JSONObject.fromObject(indoortemp);  		
+   		Object indoortemp3=indoortemp2.get("node_0");
+   		
+   		JSONObject nodedata=JSONObject.fromObject(indoortemp3);
+   		
+   		setIn_temprature(nodedata.getString("temperature"));
+   		setIn_co2(nodedata.getString("co2"));
+   		setIn_radiation(nodedata.getString("radiation"));
+   		setIn_humidity(nodedata.getString("humidity"));
+   		
+   		
+   		
+   	} 
+    /*
+     * 
+        {
+           "indoor":{
+               "node_0":{
+                    "temperature": "0",
+                    "humidity": "0",
+                    "radiation": "0",
+                    "co2": "0",
+                    "update_time": "17/Jun/2016 16:00:31"
+                }
+            }
+        }
+     */
+    public static void getoutdoor()
+   	{	
+   		String httpurl="http://120.27.110.211:8020/outdoor";
+   		StringBuffer sb=new StringBuffer();
+   		try
+   		{
+   			URL url=new URL(httpurl);
+   			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+   			conn.setRequestMethod("GET");
+   			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+   			String line=null;
+   			while((line=reader.readLine())!=null){
+   				sb.append(line+"");
+   				sb.append("\r\n");
+   			}
+   			reader.close();
+   		}
+   		catch(Exception e)
+   		{
+   			System.out.println(e.toString());
+   		}
+   		
+    	
+   			//return sb==null?"error":sb.toString();
+   		
+   	   		JSONObject outdoordata=JSONObject.fromObject(sb.toString());
+   	   		Object outdoortemp2=outdoordata.get("outdoor");
+   	   		JSONObject outdoortemp=JSONObject.fromObject(outdoortemp2);
+   	   		setOut_windspeed(outdoortemp.getString("wind_speed"));
+   	   		setWinddirection(outdoortemp.getString("wind_direction"));
+   	   		setOut_humidity(outdoortemp.getString("humidity"));
+   	   		setAtmosphere(outdoortemp.getString("atmosphere"));
+   	   		setRain(outdoortemp.getString("rain"));
+   	   		setOut_radiation(outdoortemp.getString("radiation"));
+   	   		setOut_co2(outdoortemp.getString("co2"));
+   	   	    setUpdatetime(outdoortemp.getString("update_time"));
+   		
+   	}
+   /* 
+    {
+        "outdoor":{
+            "temperature":"21",
+            "humidity":"91",
+            "radiation":"not included",
+            "co2":"not included",
+            "wind_direction":"南风",
+            "wind_speed":"20",
+            "rain":"false",
+            "atmosphere":"1007",
+            "update_time":"16/Jun/2016 23:59:08"
+        }
+    }
+    */
     public static String postcommand()
 	{	
 		String httpurl="http://120.27.110.211:8020/control";
@@ -176,6 +317,9 @@ public class Data {
 		}
 		
           //return sb==null?"error":sb.toString();
+		
+	
+    	
 		System.out.println(sb);
 		JSONObject jobj=JSONObject.fromObject(sb.toString());
 		String status=jobj.getString("status");
