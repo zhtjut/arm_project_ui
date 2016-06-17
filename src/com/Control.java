@@ -489,7 +489,7 @@ public class Control extends javax.swing.JFrame {
 
         jLabel37.setText("0");
 
-        jLabel38.setText("室内光照  lux");
+        jLabel38.setText("室内co2  ppm");
 
         jLabel39.setText("0");
 
@@ -1140,7 +1140,7 @@ private void buttondisabled()
     			Data.getoutdoor();
     			printdata();
     		}
-    	}, 0,1000*2);
+    	}, 0,1000*5);
     }
     private static  void printdata()
     {
