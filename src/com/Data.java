@@ -327,5 +327,34 @@ public class Data {
 		
 	}
     
+    public static void postParameter(String s)
+   	{	
+   		String httpurl="http://120.27.110.211:8020/control";
+   		String command=s;
+   		StringBuffer sb=new StringBuffer();
+   		try
+   		{
+   			URL url=new URL(httpurl);
+   			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+   			conn.setDoOutput(true);
+   			conn.setRequestMethod("POST");
+   			conn.setRequestProperty("content-Type", "application/json");
+   			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+   			writer.write(command);
+   			writer.close();
+   		}
+   		catch(Exception e)
+   		{
+   			System.out.println(e.toString());
+   		}
+   		
+             //return sb==null?"error":sb.toString();
+
+   		
+   	}
+    
+   
+    
+   
     
 }
