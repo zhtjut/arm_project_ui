@@ -26,7 +26,7 @@ import net.sf.json.JSONObject;
  * @author Administrator
  */
 public class Data {
-    //ÊÒÄÚÊÒÍâÊý¾Ý
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private String out_radiation="20000";
     private String out_temprature="25";
     private String out_co2="460";
@@ -36,11 +36,11 @@ public class Data {
     private String in_humidity="25";
     private String in_radiation="10000";
     private String in_co2="420";    
-    private String winddirection="ÎÞ";
+    private String winddirection="ï¿½ï¿½";
     private String atmosphere="1000";
     private String rain="false";
     private String updatetime="0-0-0-0";
-    //Ö´ÐÐ»ú¹¹Êý¾Ý
+    //Ö´ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private String roof_vent_north="off";
     private String roof_vent_south="off";
     private String side_vent="off";
@@ -54,7 +54,7 @@ public class Data {
     private String lighting_1="off";
     private String lighting_2="off";
     private String irrigation="off";
-    //²ÎÊýÉèÖÃ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private String time1=""; 
     private String temperature1="";
     private String time2="";
@@ -258,10 +258,10 @@ public class Data {
 	   		setPeriod2_stop_lighting(lightset.getString("period2_stop_lighting"));
 	   		setRadiation1_to_open_lighting(lightset.getString("radiation1_to_open_lighting"));
 	   		setRadiation2_to_open_lighting(lightset.getString("radiation2_to_open_lighting"));	   		
-	   		setUpper_limit_light_to_open_out_shade_screen(otherset.getString("upper_limit_light_to_open_shade_screen_out"));
-	   		setUpper_limit_light_to_open_in_shade_screen(otherset.getString("upper_limit_light_to_open_shade_screen_in"));
+	   		setUpper_limit_light_to_open_out_shade_screen(otherset.getString("upper_limit_light_to_open_out_shade_screen"));
+	   		setUpper_limit_light_to_open_in_shade_screen(otherset.getString("upper_limit_light_to_open_in_shade_screen"));
 	   		setSoil_humidity_to_start_irrigation(otherset.getString("soil_humidity_to_start_irrigation"));
-	   		setSoil_humidity_to_start_irrigation(otherset.getString("soil_humidity_to_start_irrigation"));
+	   		setSoil_humidity_to_stop_irrigation(otherset.getString("soil_humidity_to_stop_irrigation"));
 	   		setTemperature_to_open_fogging(otherset.getString("temperature_to_open_fogging"));
 	   		setTemperature_to_open_cooling_pad(otherset.getString("temperature_to_open_cooling_pad"));	   		
 	   		setRoof_vent_open_time(opencloseset.getString("roof_vent_open_time"));
@@ -382,8 +382,8 @@ public class Data {
    	}
     public  String change(String s)
    {	
-	   String open="¿ª";
-	   String close="¹Ø";
+	   String open="ï¿½ï¿½";
+	   String close="ï¿½ï¿½";
 	   int status=0;
 	   if (s.equals("on"))
 		   status=1;	   
@@ -1251,10 +1251,10 @@ public class Data {
     }
 
     /**
-     * @param soil_humidity_to_start_irrigation the soil_humidity_to_start_irrigation to set
+     * @param soil_humidity_to_stop_irrigation the soil_humidity_to_start_irrigation to set
      */
-    public void setSoil_humidity_to_start_irrigation(String soil_humidity_to_start_irrigation) {
-        this.soil_humidity_to_start_irrigation = soil_humidity_to_start_irrigation;
+    public void setSoil_humidity_to_start_irrigation(String setSoil_humidity_to_start_irrigation) {
+        this.soil_humidity_to_start_irrigation = setSoil_humidity_to_start_irrigation;
     }
 
     /**
