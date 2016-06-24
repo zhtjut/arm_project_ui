@@ -1,10 +1,9 @@
-package com;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package com;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -18,6 +17,8 @@ import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.HttpURLConnection;
+import java.util.HashMap;
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 /**
@@ -26,7 +27,7 @@ import net.sf.json.JSONObject;
  * @author Administrator
  */
 public class Data {
-    //������������
+    //室内室外数据
     private String out_radiation="20000";
     private String out_temprature="25";
     private String out_co2="460";
@@ -36,11 +37,11 @@ public class Data {
     private String in_humidity="25";
     private String in_radiation="10000";
     private String in_co2="420";    
-    private String winddirection="��";
+    private String winddirection="无";
     private String atmosphere="1000";
     private String rain="false";
     private String updatetime="0-0-0-0";
-    //ִ�л�������
+    //执行机构数据
     private String roof_vent_north="off";
     private String roof_vent_south="off";
     private String side_vent="off";
@@ -54,7 +55,7 @@ public class Data {
     private String lighting_1="off";
     private String lighting_2="off";
     private String irrigation="off";
-    //��������
+    //参数设置
     private String time1=""; 
     private String temperature1="";
     private String time2="";
@@ -382,8 +383,8 @@ public class Data {
    	}
     public  String change(String s)
    {	
-	   String open="��";
-	   String close="��";
+	   String open="开";
+	   String close="关";
 	   int status=0;
 	   if (s.equals("on"))
 		   status=1;	   
@@ -1251,10 +1252,10 @@ public class Data {
     }
 
     /**
-     * @param soil_humidity_to_stop_irrigation the soil_humidity_to_start_irrigation to set
+     * @param soil_humidity_to_start_irrigation the soil_humidity_to_start_irrigation to set
      */
-    public void setSoil_humidity_to_start_irrigation(String setSoil_humidity_to_start_irrigation) {
-        this.soil_humidity_to_start_irrigation = setSoil_humidity_to_start_irrigation;
+    public void setSoil_humidity_to_start_irrigation(String soil_humidity_to_start_irrigation) {
+        this.soil_humidity_to_start_irrigation = soil_humidity_to_start_irrigation;
     }
 
     /**

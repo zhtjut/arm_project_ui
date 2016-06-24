@@ -1,10 +1,9 @@
-package com;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package com;
 
 import java.util.HashMap;
 import java.util.Timer;
@@ -44,7 +43,7 @@ public class Control extends javax.swing.JFrame {
     			showclimate();
                         showcontrolstate();
     		}
-    	}, 0,3000);
+    	}, 0,60000);
     }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
@@ -268,27 +267,27 @@ public class Control extends javax.swing.JFrame {
         jButton37 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("¿ØÖÆÏµÍ³");
+        setTitle("æ§åˆ¶ç³»ç»Ÿ");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createCompoundBorder());
 
-        jLabel1.setText("Í¬¼Ã´óÑ§ÎÂÊÒ¿ØÖÆ");
+        jLabel1.setText("åŒæµå¤§å­¦æ¸©å®¤æ§åˆ¶");
 
-        jRadioButton4.setText("ÊÖ¶¯");
+        jRadioButton4.setText("æ‰‹åŠ¨");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton4ActionPerformed(evt);
             }
         });
 
-        jRadioButton5.setText("×Ô¶¯");
+        jRadioButton5.setText("è‡ªåŠ¨");
         jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton5ActionPerformed(evt);
             }
         });
 
-        jRadioButton6.setText("Ô¶³Ì");
+        jRadioButton6.setText("è¿œç¨‹");
         jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton6ActionPerformed(evt);
@@ -328,171 +327,171 @@ public class Control extends javax.swing.JFrame {
         jPanel2.setToolTipText("");
         jPanel2.setPreferredSize(new java.awt.Dimension(800, 480));
 
-        jButton1.setText("¿ª");
+        jButton1.setText("å¼€");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jLabel2.setText("Ìì´°ÄÏ");
+        jLabel2.setText("å¤©çª—å—");
 
-        jButton2.setText("¹Ø");
+        jButton2.setText("å…³");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Í£");
+        jButton3.setText("åœ");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
 
-        jLabel4.setText("Ìì´°±±2");
+        jLabel4.setText("å¤©çª—åŒ—2");
 
-        jButton7.setText("¿ª");
+        jButton7.setText("å¼€");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
 
-        jButton8.setText("¹Ø");
+        jButton8.setText("å…³");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
 
-        jButton9.setText("Í£");
+        jButton9.setText("åœ");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
             }
         });
 
-        jLabel5.setText("ÕÚÑôÍø±±");
+        jLabel5.setText("é®é˜³ç½‘åŒ—");
 
-        jButton10.setText("¿ª");
+        jButton10.setText("å¼€");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
             }
         });
 
-        jButton11.setText("¹Ø");
+        jButton11.setText("å…³");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
             }
         });
 
-        jButton12.setText("Í£");
+        jButton12.setText("åœ");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
             }
         });
 
-        jLabel6.setText("±£ÎÂÍø");
+        jLabel6.setText("ä¿æ¸©ç½‘");
         jLabel6.setToolTipText("");
 
-        jButton13.setText("¿ª");
+        jButton13.setText("å¼€");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
             }
         });
 
-        jButton14.setText("¹Ø");
+        jButton14.setText("å…³");
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14ActionPerformed(evt);
             }
         });
 
-        jButton15.setText("Í£");
+        jButton15.setText("åœ");
         jButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton15ActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Ìì´°±±");
+        jLabel3.setText("å¤©çª—åŒ—");
 
-        jButton4.setText("¿ª");
+        jButton4.setText("å¼€");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
 
-        jButton5.setText("¹Ø");
+        jButton5.setText("å…³");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
 
-        jButton6.setText("Í£");
+        jButton6.setText("åœ");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
 
-        jLabel7.setText("ÕÚÑôÍøÄÏ");
+        jLabel7.setText("é®é˜³ç½‘å—");
 
-        jButton16.setText("¿ª");
+        jButton16.setText("å¼€");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton16ActionPerformed(evt);
             }
         });
 
-        jButton17.setText("¹Ø");
+        jButton17.setText("å…³");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
             }
         });
 
-        jButton18.setText("Í£");
+        jButton18.setText("åœ");
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton18ActionPerformed(evt);
             }
         });
 
-        jLabel8.setText("ÊªÁ±Ë®±Ã");
+        jLabel8.setText("æ¹¿å¸˜æ°´æ³µ");
 
-        jButton19.setText("¿ª");
+        jButton19.setText("å¼€");
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton19ActionPerformed(evt);
             }
         });
 
-        jButton20.setText("¹Ø");
+        jButton20.setText("å…³");
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton20ActionPerformed(evt);
             }
         });
 
-        jLabel9.setText("ÅçÎí");
+        jLabel9.setText("å–·é›¾");
 
-        jButton21.setText("¿ª");
+        jButton21.setText("å¼€");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton21ActionPerformed(evt);
             }
         });
 
-        jButton22.setText("¹Ø");
+        jButton22.setText("å…³");
         jButton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton22ActionPerformed(evt);
@@ -501,103 +500,103 @@ public class Control extends javax.swing.JFrame {
 
         jLabel10.setText("co2");
 
-        jButton23.setText("¿ª");
+        jButton23.setText("å¼€");
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton23ActionPerformed(evt);
             }
         });
 
-        jButton24.setText("¹Ø");
+        jButton24.setText("å…³");
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton24ActionPerformed(evt);
             }
         });
 
-        jLabel11.setText("²¹¹â2");
+        jLabel11.setText("è¡¥å…‰2");
 
-        jButton25.setText("¿ª");
+        jButton25.setText("å¼€");
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton25ActionPerformed(evt);
             }
         });
 
-        jButton26.setText("¹Ø");
+        jButton26.setText("å…³");
         jButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton26ActionPerformed(evt);
             }
         });
 
-        jLabel12.setText("ÊªÁ±·ç»ú");
-        jLabel12.setToolTipText("ÕâÊÇÒ»¸ö°´¼ü");
+        jLabel12.setText("æ¹¿å¸˜é£æœº");
+        jLabel12.setToolTipText("è¿™æ˜¯ä¸€ä¸ªæŒ‰é”®");
         jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jButton27.setText("¿ª");
+        jButton27.setText("å¼€");
         jButton27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton27ActionPerformed(evt);
             }
         });
 
-        jButton28.setText("¹Ø");
+        jButton28.setText("å…³");
         jButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton28ActionPerformed(evt);
             }
         });
 
-        jLabel13.setText("¼ÓÈÈ");
+        jLabel13.setText("åŠ çƒ­");
 
-        jButton29.setText("¿ª");
+        jButton29.setText("å¼€");
         jButton29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton29ActionPerformed(evt);
             }
         });
 
-        jButton30.setText("¹Ø");
+        jButton30.setText("å…³");
         jButton30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton30ActionPerformed(evt);
             }
         });
 
-        jLabel14.setText("²¹¹â1");
+        jLabel14.setText("è¡¥å…‰1");
 
-        jButton31.setText("¿ª");
+        jButton31.setText("å¼€");
         jButton31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton31ActionPerformed(evt);
             }
         });
 
-        jButton32.setText("¹Ø");
+        jButton32.setText("å…³");
         jButton32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton32ActionPerformed(evt);
             }
         });
 
-        jLabel15.setText("¹à¸È");
+        jLabel15.setText("çŒæº‰");
 
-        jButton33.setText("¿ª");
+        jButton33.setText("å¼€");
         jButton33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton33ActionPerformed(evt);
             }
         });
 
-        jButton34.setText("¹Ø");
+        jButton34.setText("å…³");
         jButton34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton34ActionPerformed(evt);
             }
         });
 
-        jLabel16.setText("ÊÒÍâ¹âÕÕ  lux");
+        jLabel16.setText("å®¤å¤–å…‰ç…§  lux");
 
         jLabel17.setText("0");
 
@@ -608,79 +607,79 @@ public class Control extends javax.swing.JFrame {
             }
         });
 
-        jLabel18.setText("ÊÒÍâÎÂ¶È  ¡æ ");
+        jLabel18.setText("å®¤å¤–æ¸©åº¦  â„ƒ ");
 
         jLabel19.setText("0");
 
-        jLabel20.setText("ÊÒÍâco2   ppm");
+        jLabel20.setText("å®¤å¤–co2   ppm");
 
         jLabel21.setText("0");
 
-        jLabel22.setText("ÊÒÍâÊª¶È  %");
+        jLabel22.setText("å®¤å¤–æ¹¿åº¦  %");
 
         jLabel23.setText("0");
 
-        jLabel24.setText("ÊÒÍâ·çËÙ  m/s");
+        jLabel24.setText("å®¤å¤–é£é€Ÿ  m/s");
 
         jLabel25.setText("0");
 
-        jLabel26.setText("ÊÒÄÚ¹âÕÕ  lux");
+        jLabel26.setText("å®¤å†…å…‰ç…§  lux");
 
         jLabel27.setText("0");
 
-        jLabel28.setText("ÊÒÄÚÎÂ¶È  ¡æ");
+        jLabel28.setText("å®¤å†…æ¸©åº¦  â„ƒ");
 
         jLabel29.setText("0");
 
-        jLabel30.setText("´óÆøÑ¹");
+        jLabel30.setText("å¤§æ°”å‹");
 
         jLabel31.setText("0");
 
-        jLabel32.setText("ÊÒÍâÊª¶È %");
+        jLabel32.setText("å®¤å¤–æ¹¿åº¦ %");
 
         jLabel33.setText("0");
 
-        jLabel34.setText("ÊÒÄÚÊª¶È %");
+        jLabel34.setText("å®¤å†…æ¹¿åº¦ %");
 
         jLabel35.setText("0");
 
-        jLabel36.setText("ÏÂÓê");
+        jLabel36.setText("ä¸‹é›¨");
 
         jLabel37.setText("0");
 
-        jLabel38.setText("ÊÒÄÚco2  ppm");
+        jLabel38.setText("å®¤å†…co2  ppm");
 
         jLabel39.setText("0");
 
         jLabel40.setText("2016-06-17");
 
-        jLabel104.setText("¹Ø");
+        jLabel104.setText("å…³");
 
-        jLabel105.setText("¹Ø");
+        jLabel105.setText("å…³");
 
-        jLabel106.setText("¹Ø");
+        jLabel106.setText("å…³");
 
-        jLabel107.setText("¹Ø");
+        jLabel107.setText("å…³");
 
-        jLabel108.setText("¹Ø");
+        jLabel108.setText("å…³");
 
-        jLabel109.setText("¹Ø");
+        jLabel109.setText("å…³");
 
-        jLabel110.setText("¹Ø");
+        jLabel110.setText("å…³");
 
-        jLabel111.setText("¹Ø");
+        jLabel111.setText("å…³");
 
-        jLabel112.setText("¹Ø");
+        jLabel112.setText("å…³");
 
-        jLabel113.setText("¹Ø");
+        jLabel113.setText("å…³");
 
-        jLabel114.setText("¹Ø");
+        jLabel114.setText("å…³");
 
-        jLabel115.setText("¹Ø");
+        jLabel115.setText("å…³");
 
-        jLabel116.setText("¹Ø");
+        jLabel116.setText("å…³");
 
-        jLabel62.setText("¹Ø");
+        jLabel62.setText("å…³");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -995,77 +994,77 @@ public class Control extends javax.swing.JFrame {
 
         jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabel10, jLabel11, jLabel16});
 
-        jTabbedPane2.addTab("¿ØÖÆ»ú¹¹¼°ÔËĞĞ×´Ì¬", jPanel2);
+        jTabbedPane2.addTab("æ§åˆ¶æœºæ„åŠè¿è¡ŒçŠ¶æ€", jPanel2);
 
-        jLabel41.setText("Ê±¼ä¶Î1");
+        jLabel41.setText("æ—¶é—´æ®µ1");
 
-        jLabel42.setText("Ê±¼ä¶Î2");
+        jLabel42.setText("æ—¶é—´æ®µ2");
 
-        jLabel43.setText("Ê±¼ä¶Î3");
+        jLabel43.setText("æ—¶é—´æ®µ3");
 
-        jLabel44.setText("Ê±¼ä¶Î4");
+        jLabel44.setText("æ—¶é—´æ®µ4");
 
-        jLabel45.setText("ÎÂ¶ÈÉè¶¨Öµ1");
+        jLabel45.setText("æ¸©åº¦è®¾å®šå€¼1");
 
-        jLabel46.setText("ÎÂ¶ÈÉè¶¨Öµ2");
+        jLabel46.setText("æ¸©åº¦è®¾å®šå€¼2");
 
-        jLabel47.setText("ÎÂ¶ÈÉè¶¨Öµ3");
+        jLabel47.setText("æ¸©åº¦è®¾å®šå€¼3");
 
-        jLabel48.setText("ÎÂ¶ÈÉè¶¨Öµ4");
+        jLabel48.setText("æ¸©åº¦è®¾å®šå€¼4");
 
-        jLabel49.setText("Æ·ÖÖÉè¶¨");
+        jLabel49.setText("å“ç§è®¾å®š");
 
-        jLabel50.setText("co2Éè¶¨");
+        jLabel50.setText("co2è®¾å®š");
 
-        jLabel51.setText("co2¿ªÆôÏÂÏŞ");
+        jLabel51.setText("co2å¼€å¯ä¸‹é™");
 
-        jLabel52.setText("co2Í£Ö¹ÉÏÏŞ");
+        jLabel52.setText("co2åœæ­¢ä¸Šé™");
 
-        jLabel53.setText("ÊªÁ±·ç»úÉè¶¨");
+        jLabel53.setText("æ¹¿å¸˜é£æœºè®¾å®š");
 
-        jLabel54.setText("ÊªÁ±·ç»ú¿ªÆôÎÂ¶È");
+        jLabel54.setText("æ¹¿å¸˜é£æœºå¼€å¯æ¸©åº¦");
 
-        jLabel55.setText("ÊªÁ±·ç»ú¹Ø±ÕÎÂ¶È");
+        jLabel55.setText("æ¹¿å¸˜é£æœºå…³é—­æ¸©åº¦");
 
-        jLabel56.setText("Ìì´°Éè¶¨");
+        jLabel56.setText("å¤©çª—è®¾å®š");
 
-        jLabel57.setText("ÆÚÍûÊª¶È");
+        jLabel57.setText("æœŸæœ›æ¹¿åº¦");
 
-        jLabel58.setText("Êª¶ÈÓ°ÏìÍ¨·çÎÂ¶È·¶Î§");
+        jLabel58.setText("æ¹¿åº¦å½±å“é€šé£æ¸©åº¦èŒƒå›´");
 
-        jLabel59.setText("Êª¶ÈµÍ¶ÔÎÂ¶ÈµÄÕıÓ°Ïì");
+        jLabel59.setText("æ¹¿åº¦ä½å¯¹æ¸©åº¦çš„æ­£å½±å“");
 
-        jLabel60.setText("Êª¶È¸ß¶ÔÎÂ¶ÈµÄ¸ºÓ°Ïì");
+        jLabel60.setText("æ¹¿åº¦é«˜å¯¹æ¸©åº¦çš„è´Ÿå½±å“");
 
-        jLabel61.setText("ÆÚÍû¹âÕÕ");
+        jLabel61.setText("æœŸæœ›å…‰ç…§");
 
-        jLabel63.setText("¹âÕÕÓ°ÏìÍ¨·çÎÂ¶ÈĞ±ÂÊ");
+        jLabel63.setText("å…‰ç…§å½±å“é€šé£æ¸©åº¦æ–œç‡");
 
-        jLabel64.setText("¹âÕÕÇ¿¶ÔÎÂ¶ÈµÄ¸ºÓ°Ïì");
+        jLabel64.setText("å…‰ç…§å¼ºå¯¹æ¸©åº¦çš„è´Ÿå½±å“");
 
-        jLabel65.setText("¹âÕÕÈõ¶ÔÎÂ¶ÈµÄÕıÓ°Ïì");
+        jLabel65.setText("å…‰ç…§å¼±å¯¹æ¸©åº¦çš„æ­£å½±å“");
 
-        jLabel66.setText("Ëª½áÎÂ¶È");
+        jLabel66.setText("éœœç»“æ¸©åº¦");
 
         jTextField22.setText(" ");
 
-        jLabel67.setText("ÊÒÄÚÎÂ¶ÈÏÂÏŞ");
+        jLabel67.setText("å®¤å†…æ¸©åº¦ä¸‹é™");
 
         jTextField23.setText(" ");
 
-        jLabel68.setText("Ìì´°·çËÙÉÏÏŞ");
+        jLabel68.setText("å¤©çª—é£é€Ÿä¸Šé™");
 
         jTextField24.setText(" ");
 
-        jLabel69.setText("Ìì´°·çËÙÉÏÏŞ");
+        jLabel69.setText("å¤©çª—é£é€Ÿä¸Šé™");
 
         jTextField25.setText(" ");
 
-        jLabel70.setText("¼ÓÈÈÉè¶¨");
+        jLabel70.setText("åŠ çƒ­è®¾å®š");
 
-        jLabel71.setText("¼ÓÈÈ¿ªÆôÏÂÏŞÎÂ¶È");
+        jLabel71.setText("åŠ çƒ­å¼€å¯ä¸‹é™æ¸©åº¦");
 
-        jLabel72.setText("¼ÓÈÈ¹Ø±ÕÉÏÏŞÎÂ¶È");
+        jLabel72.setText("åŠ çƒ­å…³é—­ä¸Šé™æ¸©åº¦");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -1291,78 +1290,78 @@ public class Control extends javax.swing.JFrame {
                 .addContainerGap(70, Short.MAX_VALUE))
         );
 
-        jTabbedPane2.addTab("²ÎÊıÉèÖÃ1", jPanel4);
+        jTabbedPane2.addTab("å‚æ•°è®¾ç½®1", jPanel4);
 
-        jLabel73.setText("ÄÚ±£ÎÂÉè¶¨");
+        jLabel73.setText("å†…ä¿æ¸©è®¾å®š");
 
-        jLabel74.setText("Õ¹¿ªÔÂ·İ");
+        jLabel74.setText("å±•å¼€æœˆä»½");
 
-        jLabel75.setText("¹Ø±ÕÔÂ·İ");
+        jLabel75.setText("å…³é—­æœˆä»½");
 
-        jLabel76.setText("Õ¹¿ªÊ±¼ä");
+        jLabel76.setText("å±•å¼€æ—¶é—´");
 
-        jLabel77.setText("¹Ø±ÕÊ±¼ä");
+        jLabel77.setText("å…³é—­æ—¶é—´");
 
-        jLabel78.setText("²¹¹âÉè¶¨");
+        jLabel78.setText("è¡¥å…‰è®¾å®š");
 
-        jLabel79.setText("¿ªÆôÔÂ·İ");
+        jLabel79.setText("å¼€å¯æœˆä»½");
 
-        jLabel80.setText("¹Ø±ÕÔÂ·İ");
+        jLabel80.setText("å…³é—­æœˆä»½");
 
-        jLabel81.setText("ÉÏÎç¿ªÆôÊ±¼ä");
+        jLabel81.setText("ä¸Šåˆå¼€å¯æ—¶é—´");
 
-        jLabel82.setText("ÉÏÎç¹Ø±ÕÊ±¼ä");
+        jLabel82.setText("ä¸Šåˆå…³é—­æ—¶é—´");
 
-        jLabel83.setText("²à´°Éè¶¨");
+        jLabel83.setText("ä¾§çª—è®¾å®š");
 
-        jLabel84.setText("¿ªÆôÎÂ¶È");
+        jLabel84.setText("å¼€å¯æ¸©åº¦");
 
-        jLabel85.setText("¿ªÆôµÈ´ıÊ±¼ä");
+        jLabel85.setText("å¼€å¯ç­‰å¾…æ—¶é—´");
 
-        jLabel86.setText("¹Ø±ÕÓàÁ¿ÉÏÏŞ");
+        jLabel86.setText("å…³é—­ä½™é‡ä¸Šé™");
 
-        jLabel87.setText("ÏÂÎç¿ªÆôÊ±¼ä");
+        jLabel87.setText("ä¸‹åˆå¼€å¯æ—¶é—´");
 
-        jLabel88.setText("ÏÂÎç¹Ø±ÕÊ±¼ä");
+        jLabel88.setText("ä¸‹åˆå…³é—­æ—¶é—´");
 
-        jLabel89.setText("ÉÏÎç¹âÇ¿ÏÂÏŞ");
+        jLabel89.setText("ä¸Šåˆå…‰å¼ºä¸‹é™");
 
-        jLabel90.setText("ÏÂÎç¹âÇ¿ÏÂÏŞ");
+        jLabel90.setText("ä¸‹åˆå…‰å¼ºä¸‹é™");
 
-        jLabel91.setText("ÆäËûÉè¶¨");
+        jLabel91.setText("å…¶ä»–è®¾å®š");
 
-        jLabel92.setText("ÍâÕÚÑôÕ¹¿ª¹âÕÕÉÏÏŞ");
+        jLabel92.setText("å¤–é®é˜³å±•å¼€å…‰ç…§ä¸Šé™");
 
-        jLabel93.setText("ÄÚÕÚÑôÕ¹¿ª¹âÕÕÉÏÏŞ");
+        jLabel93.setText("å†…é®é˜³å±•å¼€å…‰ç…§ä¸Šé™");
 
-        jLabel94.setText("¹à¸È¿ªÆôÍÁÈÀÊª¶ÈÏÂÏŞ");
+        jLabel94.setText("çŒæº‰å¼€å¯åœŸå£¤æ¹¿åº¦ä¸‹é™");
 
-        jLabel95.setText("¹à¸È¹Ø±ÕÍÁÈÀÊª¶ÈÉÏÏŞ");
+        jLabel95.setText("çŒæº‰å…³é—­åœŸå£¤æ¹¿åº¦ä¸Šé™");
 
-        jLabel96.setText("ÄÚÅçÎí¿ªÆôÎÂ¶È");
+        jLabel96.setText("å†…å–·é›¾å¼€å¯æ¸©åº¦");
 
-        jLabel97.setText("ÊªÁ±¿ªÆôÎÂ¶È");
+        jLabel97.setText("æ¹¿å¸˜å¼€å¯æ¸©åº¦");
 
-        jLabel98.setText("ÈıÌ¬»ú¹¹¿ªÆôÊ±¼ä");
+        jLabel98.setText("ä¸‰æ€æœºæ„å¼€å¯æ—¶é—´");
 
-        jLabel99.setText("Ìì´°¿ªÆôÊ±¼ä");
+        jLabel99.setText("å¤©çª—å¼€å¯æ—¶é—´");
 
-        jLabel100.setText("²à´°¿ªÆôÊ±¼ä");
+        jLabel100.setText("ä¾§çª—å¼€å¯æ—¶é—´");
 
-        jLabel101.setText("ÄÚÕÚÑô¿ªÆôÊ±¼ä");
+        jLabel101.setText("å†…é®é˜³å¼€å¯æ—¶é—´");
 
-        jLabel102.setText("ÍâÕÚÑô¿ªÆôÊ±¼ä");
+        jLabel102.setText("å¤–é®é˜³å¼€å¯æ—¶é—´");
 
-        jLabel103.setText("ÄÚ±£ÎÂ¿ªÆôÊ±¼ä");
+        jLabel103.setText("å†…ä¿æ¸©å¼€å¯æ—¶é—´");
 
-        jButton36.setText("±£´æ");
+        jButton36.setText("ä¿å­˜");
         jButton36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton36ActionPerformed(evt);
             }
         });
 
-        jButton37.setText("ÉÏÒ»´Î²ÎÊı");
+        jButton37.setText("ä¸Šä¸€æ¬¡å‚æ•°");
         jButton37.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton37ActionPerformed(evt);
@@ -1593,7 +1592,7 @@ public class Control extends javax.swing.JFrame {
                 .addGap(0, 22, Short.MAX_VALUE))
         );
 
-        jTabbedPane2.addTab("²ÎÊıÉèÖÃ2", jPanel3);
+        jTabbedPane2.addTab("å‚æ•°è®¾ç½®2", jPanel3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1719,148 +1718,148 @@ private void buttondisabled()
     }                                         
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ¹à¸È ¹Ø");        // TODO add your handling code here:
+        System.out.println(" çŒæº‰ å…³");        // TODO add your handling code here:
     }                                         
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("¹à¸È ¿ª");        // TODO add your handling code here:
+        System.out.println("çŒæº‰ å¼€");        // TODO add your handling code here:
     }                                         
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("²¹¹â1 ¹Ø ");        // TODO add your handling code here:
+        System.out.println("è¡¥å…‰1 å…³ ");        // TODO add your handling code here:
     }                                         
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ²¹¹â1 ¿ª");        // TODO add your handling code here:
+        System.out.println(" è¡¥å…‰1 å¼€");        // TODO add your handling code here:
     }                                         
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("¼ÓÈÈ ¹Ø");        // TODO add your handling code here:
+        System.out.println("åŠ çƒ­ å…³");        // TODO add your handling code here:
     }                                         
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ¼ÓÈÈ ¿ª");        // TODO add your handling code here:
+        System.out.println(" åŠ çƒ­ å¼€");        // TODO add your handling code here:
     }                                         
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ÊªÁ±·ç»ú ¹Ø");        // TODO add your handling code here:
+        System.out.println(" æ¹¿å¸˜é£æœº å…³");        // TODO add your handling code here:
     }                                         
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("ÊªÁ±·ç»ú ¿ª ");        // TODO add your handling code here:
+        System.out.println("æ¹¿å¸˜é£æœº å¼€ ");        // TODO add your handling code here:
     }                                         
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ²¹¹â2 ¹Ø");        // TODO add your handling code here:
+        System.out.println(" è¡¥å…‰2 å…³");        // TODO add your handling code here:
     }                                         
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("²¹¹â2 ¿ª ");        // TODO add your handling code here:
+        System.out.println("è¡¥å…‰2 å¼€ ");        // TODO add your handling code here:
     }                                         
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("co2 ¹Ø ");        // TODO add your handling code here:
+        System.out.println("co2 å…³ ");        // TODO add your handling code here:
     }                                         
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("co2 ¿ª");        // TODO add your handling code here:
+        System.out.println("co2 å¼€");        // TODO add your handling code here:
     }                                         
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ÅçÎí ¹Ø");        // TODO add your handling code here:
+        System.out.println(" å–·é›¾ å…³");        // TODO add your handling code here:
     }                                         
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ÅçÎí ¿ª");        // TODO add your handling code here:
+        System.out.println(" å–·é›¾ å¼€");        // TODO add your handling code here:
     }                                         
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ÊªÁ±Ë®±Ã ¹Ø");        // TODO add your handling code here:
+        System.out.println(" æ¹¿å¸˜æ°´æ³µ å…³");        // TODO add your handling code here:
     }                                         
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ÊªÁ±Ë®±Ã ¿ª");        // TODO add your handling code here:
+        System.out.println(" æ¹¿å¸˜æ°´æ³µ å¼€");        // TODO add your handling code here:
     }                                         
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("ÕÚÑôÍøÄÏ Í£");        // TODO add your handling code here:
+        System.out.println("é®é˜³ç½‘å— åœ");        // TODO add your handling code here:
     }                                         
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("ÕÚÑôÍøÄÏ ¹Ø");        // TODO add your handling code here:
+        System.out.println("é®é˜³ç½‘å— å…³");        // TODO add your handling code here:
     }                                         
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ÕÚÑôÍøÄÏ ¿ª");        // TODO add your handling code here:
+        System.out.println(" é®é˜³ç½‘å— å¼€");        // TODO add your handling code here:
     }                                         
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        System.out.println("Ìì´°±± Í£ ");        // TODO add your handling code here:
+        System.out.println("å¤©çª—åŒ— åœ ");        // TODO add your handling code here:
     }                                        
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        System.out.println("Ìì´°±± ¹Ø ");        // TODO add your handling code here:
+        System.out.println("å¤©çª—åŒ— å…³ ");        // TODO add your handling code here:
     }                                        
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        System.out.println("Ìì´°±± ¿ª");        // TODO add your handling code here:
+        System.out.println("å¤©çª—åŒ— å¼€");        // TODO add your handling code here:
     }                                        
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ±£ÎÂÍø Í£");        // TODO add your handling code here:
+        System.out.println(" ä¿æ¸©ç½‘ åœ");        // TODO add your handling code here:
     }                                         
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("±£ÎÂÍø ¹Ø");        // TODO add your handling code here:
+        System.out.println("ä¿æ¸©ç½‘ å…³");        // TODO add your handling code here:
     }                                         
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("±£ÎÂÍø ¿ª");        // TODO add your handling code here:
+        System.out.println("ä¿æ¸©ç½‘ å¼€");        // TODO add your handling code here:
     }                                         
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("ÕÚÑôÍø±± Í£ ");        // TODO add your handling code here:
+        System.out.println("é®é˜³ç½‘åŒ— åœ ");        // TODO add your handling code here:
     }                                         
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println(" ÕÚÑôÍø±± ¹Ø");        // TODO add your handling code here:
+        System.out.println(" é®é˜³ç½‘åŒ— å…³");        // TODO add your handling code here:
     }                                         
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        System.out.println("ÕÚÑôÍø±± ¿ª");      // TODO add your handling code here:
+        System.out.println("é®é˜³ç½‘åŒ— å¼€");      // TODO add your handling code here:
     }                                         
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        System.out.println("Ìì´°±±2 Í£");        // TODO add your handling code here:
+        System.out.println("å¤©çª—åŒ—2 åœ");        // TODO add your handling code here:
     }                                        
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        System.out.println("Ìì´°±±2 ¹Ø");        // TODO add your handling code here:
+        System.out.println("å¤©çª—åŒ—2 å…³");        // TODO add your handling code here:
     }                                        
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        System.out.println("Ìì´°±±2 ¿ª");        // TODO add your handling code here:
+        System.out.println("å¤©çª—åŒ—2 å¼€");        // TODO add your handling code here:
     }                                        
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        System.out.println("Ìì´°ÄÏ Í£");// TODO add your handling code here:
+        System.out.println("å¤©çª—å— åœ");// TODO add your handling code here:
     }                                        
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        System.out.println("Ìì´°ÄÏ ¹Ø"); // TODO add your handling code here:
+        System.out.println("å¤©çª—å— å…³"); // TODO add your handling code here:
     }                                        
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        System.out.println("Ìì´°ÄÏ ¿ª");// TODO add your handling code here:
+        System.out.println("å¤©çª—å— å¼€");// TODO add your handling code here:
     }                                        
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        data.postParameter(createParameterJson());// ±£´æ    TODO add your handling code here:
+        data.postParameter(createParameterJson());// ä¿å­˜TODO add your handling code here:
     }                                         
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         data.getparameter();
-        showParameter();// ÉÏÒ»´Î²ÎÊı    TODO add your handling code here:
+        showParameter();// ä¸Šä¸€æ¬¡å‚æ•°TODO add your handling code here:
     }                                         
 
     /**
@@ -1965,7 +1964,7 @@ public  void showParameter()
 	   		jTextField43.setText(data.getUpper_limit_light_to_open_out_shade_screen());
 	   		jTextField44.setText(data.getUpper_limit_light_to_open_in_shade_screen());
 	   		jTextField45.setText(data.getSoil_humidity_to_start_irrigation());
-	   		jTextField46.setText(data.getSoil_humidity_to_start_irrigation());
+	   		jTextField46.setText(data.getSoil_humidity_to_stop_irrigation());
 	   		jTextField47.setText(data.getTemperature_to_open_fogging());
 	   		jTextField48.setText(data.getTemperature_to_open_cooling_pad());
 	   		
@@ -2044,7 +2043,7 @@ public  String createParameterJson()
         otherset.put("upper_limit_light_to_open_out_shade_screen", jTextField43.getText());
         otherset.put("upper_limit_light_to_open_in_shade_screen", jTextField44.getText());
         otherset.put("soil_humidity_to_start_irrigation", jTextField45.getText());
-        otherset.put("soil_humidity_to_start_irrigation", jTextField46.getText());
+        otherset.put("soil_humidity_to_stop_irrigation", jTextField46.getText());
         otherset.put("temperature_to_open_fogging", jTextField47.getText());
         otherset.put("temperature_to_open_cooling_pad", jTextField48.getText());
         opencloseset.put("roof_vent_open_time", jTextField49.getText());
@@ -2313,4 +2312,3 @@ public  String createParameterJson()
 
    
 }
-
