@@ -27,30 +27,44 @@ public class Data {
     private static String in_temprature="25";
     private static String in_humidity="25";
     private static String in_radiation="10000";
-    private static String in_co2="420";  
-    
-   
+    private static String in_co2="420";    
 	private static String winddirection="无";
     private static String atmosphere="1000";
     private static String rain="false";
     private static String updatetime="0-0-0-0";
-    /*static String skylight_south_open = "FE050000FF009835";
-    static String skylight_south_close= "FE0500000000D9C5";
-    static String skylight_north_open = "FE050001FF00C9F5";
-    static String skylight_north_close= "FE05000100008805";    
-    static String sunshade_curtain_open = "FE050002FF0039F5";
-    static String sunshade_curtain_close= "FE05000200007805";
-    static String spray_open = "FE050003FF006835";
-    static String spary_close= "FE050003000029C5";   
-    static String sunshade_curtain_north_open = "FE050004FF00D9F4";
-    static String sunshade_curtain_north_close= "FE05000400009804";    
-    static String wet_curtain_open = "FE050005FF008834";
-    static String wet_curtain_close= "FE0500050000C9C4";    
-    static String co2_open="FE050006FF007834";
-    static String co2_close="FE050006000039C4";    
-    static String led2_open="FE050007FF0029F4";
-    static String led2_close="FE05000700006804";
-    */
+    private static String roof_vent_north="off";
+    private static String roof_vent_south="off";
+    private static String side_vent="off";
+    private static String shade_screen_out="off";
+    private static String shade_screen_in="off";
+    private static String thermal_screen="off";
+    private static String cooling_pad="off";
+    private static String fogging="off";
+    private static String heating="off";
+    private static String co2="off";
+    private static String lighting_1="off";
+    private static String lighting_2="off";
+    private static String irrigation="off";
+    
+    
+    /*"roof_vent_south": "on",
+                    "roof_vent_north": "off",
+                    "side_vent": "off",
+                    "shade_screen_out": "off",
+                    "shade_screen_in": "off",
+                    "thermal_screen": "off"
+                },
+                "bi_state":{
+                    "cooling_pad": "on",
+                    "fogging": "off",
+                    "heating": "off",
+                    "co2": "off",
+                    "lighting_1": "off",
+                    "lighting_2": "off",
+                    "irrigation": "off"
+     * 
+     * */
+
     
     
     public static String getWinddirection() {
@@ -157,34 +171,115 @@ public class Data {
         in_co2 = aIn_co2;
     }
 
-    public static String getPacket()
-	{	
-		String httpurl="http://120.27.110.211/new.json";
-		StringBuffer sb=new StringBuffer();
-		try
-		{
-			URL url=new URL(httpurl);
-			URLConnection conn=url.openConnection();
-			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
-			String line=null;
-			while((line=reader.readLine())!=null){
-				sb.append(line+"");
-				sb.append("\r\n");
-			}
-			reader.close();
-		}
-		catch(Exception e)
-		{
-			System.out.println(e.toString());
-		}
-		
-			return sb==null?"error":sb.toString();
-		
-	} 
+    public static String getRoof_vent_north() {
+		return roof_vent_north;
+	}
+
+	public static void setRoof_vent_north(String roof_vent_north) {
+		Data.roof_vent_north = roof_vent_north;
+	}
+
+	public static String getRoof_vent_south() {
+		return roof_vent_south;
+	}
+
+	public static void setRoof_vent_south(String roof_vent_south) {
+		Data.roof_vent_south = roof_vent_south;
+	}
+
+	public static String getSide_vent() {
+		return side_vent;
+	}
+
+	public static void setSide_vent(String side_vent) {
+		Data.side_vent = side_vent;
+	}
+
+	public static String getShade_screen_out() {
+		return shade_screen_out;
+	}
+
+	public static void setShade_screen_out(String shade_screen_out) {
+		Data.shade_screen_out = shade_screen_out;
+	}
+
+	public static String getShade_screen_in() {
+		return shade_screen_in;
+	}
+
+	public static void setShade_screen_in(String shade_screen_in) {
+		Data.shade_screen_in = shade_screen_in;
+	}
+
+	public static String getThermal_screen() {
+		return thermal_screen;
+	}
+
+	public static void setThermal_screen(String thermal_screen) {
+		Data.thermal_screen = thermal_screen;
+	}
+
+	public static String getCooling_pad() {
+		return cooling_pad;
+	}
+
+	public static void setCooling_pad(String cooling_pad) {
+		Data.cooling_pad = cooling_pad;
+	}
+
+	public static String getFogging() {
+		return fogging;
+	}
+
+	public static void setFogging(String fogging) {
+		Data.fogging = fogging;
+	}
+
+	public static String getHeating() {
+		return heating;
+	}
+
+	public static void setHeating(String heating) {
+		Data.heating = heating;
+	}
+
+	public static String getCo2() {
+		return co2;
+	}
+
+	public static void setCo2(String co2) {
+		Data.co2 = co2;
+	}
+
+	public static String getLighting_1() {
+		return lighting_1;
+	}
+
+	public static void setLighting_1(String lighting_1) {
+		Data.lighting_1 = lighting_1;
+	}
+
+	public static String getLighting_2() {
+		return lighting_2;
+	}
+
+	public static void setLighting_2(String lighting_2) {
+		Data.lighting_2 = lighting_2;
+	}
+
+	public static String getIrrigation() {
+		return irrigation;
+	}
+
+	public static void setIrrigation(String irrigation) {
+		Data.irrigation = irrigation;
+	}
+
+
     
     public static void getindoor()
    	{	
-   		String httpurl="http://120.27.110.211:8020/indoor";
+   		String httpurl="http://127.0.0.1:8020/indoor";
    		StringBuffer sb=new StringBuffer();
    		try
    		{
@@ -221,23 +316,10 @@ public class Data {
    		
    		
    	} 
-    /*
-     * 
-        {
-           "indoor":{
-               "node_0":{
-                    "temperature": "0",
-                    "humidity": "0",
-                    "radiation": "0",
-                    "co2": "0",
-                    "update_time": "17/Jun/2016 16:00:31"
-                }
-            }
-        }
-     */
+  
     public static void getoutdoor()
    	{	
-   		String httpurl="http://120.27.110.211:8020/outdoor";
+   		String httpurl="http://127.0.0.1:8020/outdoor";
    		StringBuffer sb=new StringBuffer();
    		try
    		{
@@ -273,24 +355,85 @@ public class Data {
    	   	    setUpdatetime(outdoortemp.getString("update_time"));
    		
    	}
-   /* 
-    {
-        "outdoor":{
-            "temperature":"21",
-            "humidity":"91",
-            "radiation":"not included",
-            "co2":"not included",
-            "wind_direction":"南风",
-            "wind_speed":"20",
-            "rain":"false",
-            "atmosphere":"1007",
-            "update_time":"16/Jun/2016 23:59:08"
-        }
-    }
-    */
-    public static String postcommand()
+    public static void getcontrolstate()
+   	{	
+   		String httpurl="http://127.0.0.1:8020/control";
+   		StringBuffer sb=new StringBuffer();
+   		try
+   		{
+   			URL url=new URL(httpurl);
+   			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+   			conn.setRequestMethod("GET");
+   			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+   			String line=null;
+   			while((line=reader.readLine())!=null){
+   				sb.append(line+"");
+   				sb.append("\r\n");
+   			}
+   			reader.close();
+   		}
+   		catch(Exception e)
+   		{
+   			System.out.println(e.toString());
+   		}
+
+   	   		JSONObject controldata=JSONObject.fromObject(sb.toString());
+   	   		JSONObject actuator=controldata.getJSONObject("actuator");
+   	   		JSONObject tri=actuator.getJSONObject("tri_state");
+   	   		JSONObject bi=actuator.getJSONObject("bi_state");
+   	   		Data.setRoof_vent_south(change(tri.getString("roof_vent_south")));
+   	   		Data.setRoof_vent_north(change(tri.getString("roof_vent_north")));
+   	   		Data.setSide_vent(change(tri.getString("side_vent")));
+   	   		Data.setShade_screen_out(change(tri.getString("shade_screen_out")));
+   	   		Data.setShade_screen_in(change(tri.getString("shade_screen_in")));
+   	   		Data.setThermal_screen(change(tri.getString("thermal_screen")));
+   	   		Data.setCooling_pad(change(bi.getString("cooling_pad")));
+   	   		Data.setFogging(change(bi.getString("fogging")));
+   	   		Data.setHeating(change(bi.getString("heating")));
+   	   		Data.setCo2(change(bi.getString("co2")));
+   	   		Data.setLighting_1(change(bi.getString("lighting_1")));
+   	   		Data.setLighting_2(change(bi.getString("lighting_2")));
+   	   		Data.setIrrigation(change(bi.getString("irrigation")));
+   	}
+    public static String getparameter()
+   	{	
+   		String httpurl="http://127.0.0.1:8020/parameter";
+   		StringBuffer sb=new StringBuffer();
+   		try
+   		{
+   			URL url=new URL(httpurl);
+   			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+   			conn.setRequestMethod("GET");
+   			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+   			String line=null;
+   			while((line=reader.readLine())!=null){
+   				sb.append(line+"");
+   				sb.append("\r\n");
+   			}
+   			reader.close();
+   		}
+   		catch(Exception e)
+   		{
+   			System.out.println(e.toString());
+   		}
+   		    	
+   			return sb==null?"error":sb.toString();
+   		
+   	}
+
+   public static String change(String s)
+   {	
+	   String open="开";
+	   String close="关";
+	   int status=0;
+	   if (s.equals("on"))
+		   status=1;	   
+	return status==1?open:close;
+   }
+   
+    public static String post_controlcommand()
 	{	
-		String httpurl="http://120.27.110.211:8020/control";
+		String httpurl="http://127.0.0.1:8020/control";
 		String command="{\"roof_vent_south\": \"on\"}";
 		StringBuffer sb=new StringBuffer();
 		try
@@ -329,9 +472,9 @@ public class Data {
     
     public static void postParameter(String s)
    	{	
-   		String httpurl="http://120.27.110.211:8020/control";
+   		String httpurl="http://127.0.0.1:8020/control";
    		String command=s;
-   		StringBuffer sb=new StringBuffer();
+   		//StringBuffer sb=new StringBuffer();
    		try
    		{
    			URL url=new URL(httpurl);
@@ -349,10 +492,11 @@ public class Data {
    		}
    		
              //return sb==null?"error":sb.toString();
-
+   		System.out.println("post parameter success");
    		
    	}
-    
+
+
    
     
    
