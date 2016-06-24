@@ -1,5 +1,5 @@
 ﻿# myui
 实现功能：
-每5s get indoor outdoor control 并显示
+每3s 获取 indoor outdoor control状态 并显示
 保存参数，可以post parameter
-上一次参数，可以get,并显示
+上一次参数，可以获取，并显示parameter
