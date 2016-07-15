@@ -273,7 +273,7 @@ public class Data {
                
    		
    	} 
-    public  String postcommand()
+    public  String post_roofsouth_on()
 	{	
 		String httpurl="http://127.0.0.1:8020/control";
 		String command="{\"roof_vent_south\": \"on\"}";
@@ -308,6 +308,1104 @@ public class Data {
 		return status==null?"error":status;
 		
 	}
+    public  String post_roofsouth_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"roof_vent_south\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+     public  String post_roofsouth_stop()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"roof_vent_south\": \"stop\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+     
+     
+    public  String post_roofnorth_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"roof_vent_north\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_roofnorth_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"roof_vent_north\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_roofnorth_stop()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"roof_vent_north\": \"stop\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    
+    
+    public  String post_sidevent_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"side_vent\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_sidevent_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"side_vent\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+     public  String post_sidevent_stop()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"side_vent\": \"stop\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+     
+     
+    public  String post_shade_screen_out_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"shade_screen_out\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_shade_screen_out_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"shade_screen_out\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+     public  String post_shade_screen_out_stop()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"shade_screen_out\": \"stop\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+     
+     
+    public  String post_shade_screen_in_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"shade_screen_in\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_shade_screen_in_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"shade_screen_in\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_shade_screen_in_stop()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"shade_screen_in\": \"stop\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    
+    
+    public  String post_thermal_screen_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"thermal_screen\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_thermal_screen_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"thermal_screen\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_thermal_screen_stop()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"thermal_screen\": \"stop\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    
+    
+    public  String post_cooling_pad_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"cooling_pad\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_cooling_pad_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"cooling_pad\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_fogging_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"fogging\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_fogging_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"fogging\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_heating_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"heating\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_heating_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"heating\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_co2_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"co2\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_co2_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"co2\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_lighting_1_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"lighting_1\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_lighting_1_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"lighting_1\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_lighting_2_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"lighting_2\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_lighting_2_off()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"lighting_2\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_irrigation_on()
+  	{	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"irrigation\": \"on\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    public  String post_irrigation_off()
+            {	
+  		String httpurl="http://127.0.0.1:8020/control";
+  		String command="{\"irrigation\": \"off\"}";
+  		StringBuffer sb=new StringBuffer();
+  		try
+  		{
+  			URL url=new URL(httpurl);
+  			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+  			conn.setDoOutput(true);
+  			conn.setRequestMethod("POST");
+  			conn.setRequestProperty("content-Type", "application/json");
+  			BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+  			writer.write(command);
+  			writer.close();
+  			BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+  			String line=null;
+  			while((line=reader.readLine())!=null){
+  				sb.append(line+"");
+  				sb.append("\r\n");
+  			}
+  			reader.close();
+  		}
+  		catch(Exception e)
+  		{
+  			System.out.println(e.toString());
+  		}		
+            //return sb==null?"error":sb.toString();
+
+  		System.out.println(sb);
+  		JSONObject jobj=JSONObject.fromObject(sb.toString());
+  		String status=jobj.getString("status");
+  		return status==null?"error":status;
+  		
+  	}
+    
     public void postParameter(String s)
    	{	
    		String httpurl="http://127.0.0.1:8020/parameter";

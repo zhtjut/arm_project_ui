@@ -1719,26 +1719,32 @@ private void buttondisabled()
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println(" 灌溉 关");        // TODO add your handling code here:
+         data.post_irrigation_off();
     }                                         
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("灌溉 开");        // TODO add your handling code here:
+        data.post_irrigation_on();
     }                                         
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("补光1 关 ");        // TODO add your handling code here:
+         data.post_lighting_1_off();
     }                                         
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println(" 补光1 开");        // TODO add your handling code here:
+         data.post_lighting_1_on();
     }                                         
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("加热 关");        // TODO add your handling code here:
+        data.post_heating_off();
     }                                         
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println(" 加热 开");        // TODO add your handling code here:
+         data.post_heating_on();
     }                                         
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {                                          
@@ -1751,106 +1757,132 @@ private void buttondisabled()
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println(" 补光2 关");        // TODO add your handling code here:
+          data.post_lighting_2_off();
     }                                         
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("补光2 开 ");        // TODO add your handling code here:
+        data.post_lighting_2_on();
     }                                         
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("co2 关 ");        // TODO add your handling code here:
+         data.post_co2_off();
     }                                         
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("co2 开");        // TODO add your handling code here:
+         data.post_co2_on();
     }                                         
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println(" 喷雾 关");        // TODO add your handling code here:
+         data.post_fogging_off();
     }                                         
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println(" 喷雾 开");        // TODO add your handling code here:
+        data.post_fogging_on();
     }                                         
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println(" 湿帘水泵 关");        // TODO add your handling code here:
+         data.post_cooling_pad_off();
     }                                         
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println(" 湿帘水泵 开");        // TODO add your handling code here:
+        data.post_cooling_pad_on();
     }                                         
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("遮阳网南 停");        // TODO add your handling code here:
+          data.post_shade_screen_out_stop();
     }                                         
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("遮阳网南 关");        // TODO add your handling code here:
+          data.post_shade_screen_out_off();
     }                                         
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println(" 遮阳网南 开");        // TODO add your handling code here:
+        data.post_shade_screen_out_on();
     }                                         
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         System.out.println("天窗北 停 ");        // TODO add your handling code here:
+         data.post_roofnorth_stop();
     }                                        
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         System.out.println("天窗北 关 ");        // TODO add your handling code here:
+         data.post_roofnorth_off();
     }                                        
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         System.out.println("天窗北 开");        // TODO add your handling code here:
+        data.post_roofnorth_on();
     }                                        
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println(" 保温网 停");        // TODO add your handling code here:
+         data.post_thermal_screen_stop();   
     }                                         
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("保温网 关");        // TODO add your handling code here:
+         data.post_thermal_screen_off();   
     }                                         
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("保温网 开");        // TODO add your handling code here:
+        data.post_thermal_screen_on();          
     }                                         
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("遮阳网北 停 ");        // TODO add your handling code here:
+        data.post_shade_screen_in_stop();
     }                                         
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println(" 遮阳网北 关");        // TODO add your handling code here:
+        data.post_shade_screen_in_off();
     }                                         
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         System.out.println("遮阳网北 开");      // TODO add your handling code here:
+        data.post_shade_screen_in_on();
     }                                         
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         System.out.println("天窗北2 停");        // TODO add your handling code here:
+          data.post_roofnorth_stop();
     }                                        
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         System.out.println("天窗北2 关");        // TODO add your handling code here:
+        data.post_roofnorth_off();
     }                                        
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         System.out.println("天窗北2 开");        // TODO add your handling code here:
+          data.post_roofnorth_on();
     }                                        
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         System.out.println("天窗南 停");// TODO add your handling code here:
+        data.post_roofsouth_stop();
     }                                        
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         System.out.println("天窗南 关"); // TODO add your handling code here:
+        data.post_roofsouth_off();
     }                                        
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         System.out.println("天窗南 开");// TODO add your handling code here:
+        data.post_roofsouth_on();
     }                                        
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {                                          
